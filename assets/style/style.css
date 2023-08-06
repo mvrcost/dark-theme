@@ -1,0 +1,150 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+
+    
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+}
+
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a855f7;
+  
+}
+
+.icons img{
+    width: 35px;
+}
+
+
+#login{
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px ;
+    border-radius: 8px;
+    gap: 20px;
+    box-shadow: 5px 5px 8px rgba(0,0, 0,0.336);
+    height: fit-content;
+}
+
+.login-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+
+
+i {
+    cursor: pointer;
+}
+.info label{
+    font-size: 14px;
+    color: #797984;
+
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 3px;
+    cursor: text;
+}
+
+
+
+.info i {
+    font-size: 18px;
+    color: #000;
+    cursor: text;
+    
+}
+
+
+.info input {
+    border: none;
+    background-color: transparent;
+
+}
+
+#name, #email, #password{
+    border-bottom: 1px solid var(--color-purple-100)
+}
+
+#forgot{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+#forgot:hover{
+    color: #7c3aed;
+}
+
+
+button{
+    border: none;
+    padding: 6px;
+    font-weight: bold;
+    color: #f8fafc;
+    cursor: pointer;
+    font-size: 15   px;
+    background-color: #bf46ef;
+}
+
+
+
+button:hover{
+    transform: scale(1.05);
+}
+
+
+.dark#login{
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+}
+
+
+.dark#login input{
+    color: var(--color-light-50);
+}
+.dark#login i{
+    color: #f8fafc;
+}
+.dark#login label{
+    color: #f8fafc;
+}
